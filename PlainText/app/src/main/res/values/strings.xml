@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">"PlainText"</string>
+    <string name="mesLogin">Login:</string>
+    <string name="mesSenha">Senha:</string>
+    <string name="SaveLogin">Salvar informação de login</string>
+    <string name="sobre">Sobre</string>
+    <string name="txtTesteNewAct">Mudança nova Activity</string>
+</resources>

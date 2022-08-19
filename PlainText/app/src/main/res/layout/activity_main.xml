@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/mesLogin"
+        app:layout_constraintEnd_toStartOf="@+id/editlogin1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editlogin1"
+        android:layout_width="211dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Digite um usuário"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textLogin"
+        app:layout_constraintVertical_bias="0.621" />
+
+    <TextView
+        android:id="@+id/textSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/mesSenha"
+        app:layout_constraintStart_toStartOf="@+id/textLogin"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin" />
+
+    <EditText
+        android:id="@+id/Editpass"
+        android:layout_width="212dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Digite uma senha numérica"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textSenha"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <CheckBox
+        android:id="@+id/checkSaveLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/SaveLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Editpass" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="entrarClicado"
+        android:text="Entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkSaveLogin" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_acad7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
